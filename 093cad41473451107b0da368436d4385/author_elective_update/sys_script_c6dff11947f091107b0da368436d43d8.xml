@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_851591_wish_list_wish_item</collection>
+        <condition>current.item.changes() || current.requester.changes() || current.operation() == 'insert'</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Populate Display name</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// Calculate Display name value by listing the item followed by the
+// User in parentheses. For example, Pencils (Fred Luddy)
+
+current.display_name = current.item + " (" + current.requester.name + ")";]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-19 05:13:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c6dff11947f091107b0da368436d43d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populate Display name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wish List" source="x_851591_wish_list">093cad41473451107b0da368436d4385</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wish List">093cad41473451107b0da368436d4385</sys_scope>
+        <sys_update_name>sys_script_c6dff11947f091107b0da368436d43d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 05:13:32</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=c6dff11947f091107b0da368436d43d8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Wish List">093cad41473451107b0da368436d4385</application>
+        <file_path/>
+        <instance_id>1365fcd2db5d4150ad8dd7c8f49619cb</instance_id>
+        <instance_name>dev122427</instance_name>
+        <name>sys_script_c6dff11947f091107b0da368436d43d8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_851591_wish_list_wish_item&lt;/collection&gt;&lt;condition&gt;current.item.changes() || current.requester.changes() || current.operation() == 'insert'&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Populate Display name&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[// Calculate Display name value by listing the item followed by the
+// User in parentheses. For example, Pencils (Fred Luddy)
+
+current.display_name = current.item + " (" + current.requester.name + ")";]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-19 05:13:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c6dff11947f091107b0da368436d43d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Populate Display name&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Wish List" source="x_851591_wish_list"&gt;093cad41473451107b0da368436d4385&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Wish List"&gt;093cad41473451107b0da368436d4385&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_c6dff11947f091107b0da368436d43d8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-19 05:13:32&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c6dff11947f091107b0da368436d43d8"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1950853796</payload_hash>
+        <record_name>Populate Display name</record_name>
+        <reverted_from/>
+        <source>92864e95473491107b0da368436d433b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carol.coughlin</sys_created_by>
+        <sys_created_on>2022-07-19 05:41:31</sys_created_on>
+        <sys_id>2e864e95473491107b0da368436d4379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18214f9cd650000001</sys_recorded_at>
+        <sys_updated_by>carol.coughlin</sys_updated_by>
+        <sys_updated_on>2022-07-19 05:41:31</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>e8204e114234911021f9d91bfd7e7277</update_guid>
+        <update_guid_history>e8204e114234911021f9d91bfd7e7277:-1950853796,8d76ca9580349110fa03588725643c1a:746263248,e8204e114234911021f9d91bfd7e7277:-1950853796</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-19 05:57:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>0353527b792247c696a6123c6332f149</sys_id>
+        <sys_metadata>c6dff11947f091107b0da368436d43d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populate Display name</sys_name>
+        <sys_package display_value="Wish List" source="x_851591_wish_list">093cad41473451107b0da368436d4385</sys_package>
+        <sys_parent display_value="Wish Item">b56f65c9473451107b0da368436d436c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Wish List">093cad41473451107b0da368436d4385</sys_scope>
+        <sys_scope_delete display_value="">46f5fed1b0534e5282880f30ac38bfc4</sys_scope_delete>
+        <sys_update_name>sys_script_c6dff11947f091107b0da368436d43d8</sys_update_name>
+        <sys_update_version display_value="sys_script_c6dff11947f091107b0da368436d43d8">2e864e95473491107b0da368436d4379</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-19 05:57:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
